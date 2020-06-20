@@ -1,0 +1,91 @@
+General
+Unique ID                                : 174126994284866066667032895767635873605 (0x82FFA3A55C0D0FE8C263E463C958CF45)
+Complete name                            : D:\NHD\Saraband.2003.Criterion.720p.BluRay.AAC.2.0.x264-YaR\Saraband.2003.Criterion.720p.BluRay.AAC.2.0.x264-YaR.mkv
+Format                                   : Matroska
+Format version                           : Version 4
+File size                                : 6.87 GiB
+Duration                                 : 1 h 51 min
+Overall bit rate                         : 8 791 kb/s
+Encoded date                             : UTC 2020-05-20 11:59:45
+Writing application                      : mkvmerge v46.0.0 ('No Deeper Escape') 64-bit
+Writing library                          : libebml v1.3.10 + libmatroska v1.5.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings                          : CABAC / 9 Ref Frames
+Format settings, CABAC                   : Yes
+Format settings, Reference frames        : 9 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1 h 51 min
+Bit rate                                 : 8 585 kb/s
+Width                                    : 1 280 pixels
+Height                                   : 720 pixels
+Display aspect ratio                     : 16:9
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 (24000/1001) FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.389
+Stream size                              : 6.71 GiB (98%)
+Title                                    : x264 / 8585 kbps / 720p / 23.976 fps / 16:9 / High Profile 4.1
+Writing library                          : x264 core 160 r3000+55 7d98a0e patched [(8 & 10)-bit@all X86_64]
+Encoding settings                        : cabac=1 / ref=9 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / fade_compensate=0.00 / psy_rd=1.05:0.00 / mixed_ref=1 / me_range=32 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=12 / lookahead_threads=3 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=16 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=24 / scenecut=40 / intra_refresh=0 / rc_lookahead=250 / rc=crf / mbtree=1 / crf=16.7000 / qcomp=0.68 / qpmin=0:0:0 / qpmax=69:69:69 / qpstep=4 / vbv_maxrate=62500 / vbv_bufsize=78125 / crf_max=0.0 / nal_hrd=none / filler=0 / ip_ratio=1.40 / aq=3:0.63 / aq-sensitivity=10.00 / aq-factor=1.00:1.00:1.00 / aq2=0 / aq3=0 / zones=35586,35880,b=1.2/44050,51900,b=1.4/52066,52220,b=1.4/53286,53628,b=1.2/63912,64392,b=1.2/64393,64746,b=1.2/77047,77098,b=1.2/77099,77136,b=1.2/77137,77150,b=1.2/142782,144936,b=1.4/144937,148158,b=1.2/148233,148387,b=1.8/148388,150418,b=1.4/157772,160915,crf=23
+Language                                 : Swedish
+Default                                  : Yes
+Forced                                   : No
+
+Audio
+ID                                       : 2
+Format                                   : AAC LC
+Format/Info                              : Advanced Audio Codec Low Complexity
+Codec ID                                 : A_AAC-2
+Duration                                 : 1 h 51 min
+Bit rate                                 : 203 kb/s
+Channel(s)                               : 2 channels
+Channel layout                           : L R
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 46.875 FPS (1024 SPF)
+Compression mode                         : Lossy
+Stream size                              : 162 MiB (2%)
+Title                                    : AAC / 2.0 / 48 kHz / 203 kbps
+Language                                 : Swedish
+Default                                  : Yes
+Forced                                   : No
+
+Text
+ID                                       : 3
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 1 h 49 min
+Bit rate                                 : 49 b/s
+Count of elements                        : 1262
+Stream size                              : 39.9 KiB (0%)
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Prologue
+00:02:58.929                             : en:One: "Marianne Puts Her Plan into Action"
+00:07:45.757                             : en:"It's you, Marianne"
+00:12:38.758                             : en:Holding hands, talking
+00:19:22.953                             : en:Karin talks about her father
+00:23:52.556                             : en:"Never again"
+00:30:34.332                             : en:"I can't see you married to Grandpa"
+00:36:04.871                             : en:Three: "About Anna"
+00:45:02.033                             : en:Henrik visits Johan
+00:53:38.424                             : en:Five: "Bach"
+01:01:19.134                             : en:Henrik confesses to Marianne
+01:05:30.844                             : en:Six: "An Offer"
+01:14:43.729                             : en:Seven: "The Letter from Anna"
+01:23:20.120                             : en:Eight: "Saraband"
+01:28:30.805                             : en:Karin's independence
+01:34:27.620                             : en:Nine: "Decision"
+01:39:07.775                             : en:Ten: "Hour of the Wolf"
+01:44:33.893                             : en:Epilogue
