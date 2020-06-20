@@ -1,0 +1,35 @@
+FFVideoSource("D:\NHD\Saraband.2003.Criterion.BluRay.Remux.1080p.AVC.DTS-HD.MA.2.0-TDD.mkv")
+FillBorders(2, 0, 2, 0)
+bbmod(0, 0, 5, 8, thresh = 24, blur = 48)
+z_Spline36Resize(1280, 720, dither = "error_diffusion")
+f1 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 84, grainC = 72, Y = 32, Cb =32, Cr = 32), mt_binarize(28, true), luma = true)
+f2 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 108, grainC = 72, Y = 32, Cb =32, Cr = 32), mt_binarize(24, true), luma = true)
+f3 = f3kdb(dither_algo = 3, range = 8, grainY = 124, grainC = 84, Y = 32, Cb =32, Cr = 32)
+f4 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 124, grainC = 84, Y = 32, Cb =32, Cr = 32), mt_binarize(40, false), luma = true)
+f5 = f3kdb(dither_algo = 3, range = 8, grainY = 96, grainC = 72, Y = 32, Cb =48, Cr = 48)
+ConditionalFilter(f1, last, "ST", "=", "1")
+ConditionalFilter(f2, last, "ST", "=", "2")
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalFilter(f4, last, "ST", "=", "4")
+ConditionalFilter(f5, last, "ST", "=", "5")
+ConditionalReader("filter.txt", "ST", show = False)
+
+/*
+filter.txt
+
+type int
+default 0
+
+R 44050 51900 1
+R 52066 52220 2
+R 53286 53628 3
+R 63912 64392 3
+R 64393 64746 2
+R 77047 77098 3
+R 77099 77136 4
+R 77137 77150 3
+R 142782 144936 1
+R 144937 148158 3
+R 148233 148387 5
+R 148388 150418 3
+*/
