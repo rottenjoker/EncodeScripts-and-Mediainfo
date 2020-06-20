@@ -1,0 +1,36 @@
+FFVideoSource("D:\NHD\Dead.Man.1995.Criterion.BluRay.Remux.1080p.AVC.DTS-HD.MA.2.0-BMF.mkv")
+Crop(0, 20, -0, -20)
+FillMargins(0, 1, 0, 1)
+Fixer(0, 0, 4, 0, radius = 32)
+z_Spline36Resize(1280, 694, dither = "error_diffusion")
+f1 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 72, grainC = 64, Y = 32, Cb =64, Cr = 64), mt_binarize(24, true), luma = true)
+f2 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 60, grainC = 64, Y = 32, Cb =64, Cr = 64), mt_binarize(30, true), luma = true)
+f3 = mt_merge(last, f3kdb(dither_algo = 3, range = 8, grainY = 96, grainC = 64, Y = 24, Cb =64, Cr = 64), mt_binarize(36, true), luma = true)
+ConditionalFilter(f1, last, "ST", "=", "1")
+ConditionalFilter(f2, last, "ST", "=", "2")
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalReader("filter.txt", "ST", show = False)
+
+/*
+filter.txt
+
+type int
+default 0
+
+R 5258 5414 1
+R 26552 27455 1
+R 33480 34758 2
+R 35579 35674 1
+R 35734 35803 1
+R 39927 40454 3
+R 77354 78780 3
+R 79062 79655 3
+R 79843 80317 3
+R 81436 84384 3
+R 84639 84717 3
+R 85214 85245 3
+R 85476 85519 3
+R 85589 85629 3
+R 85719 87732 3
+R 160366 160590 1
+*/
