@@ -1,0 +1,31 @@
+FFVideoSource("D:\NHD\The.Constant.Factor.1980.USA.BluRay.Remux.1080p.AVC.DTS-HD.MA.5.1-TDD.mkv")
+z_Spline36Resize(1280, 720, dither="error_diffusion")
+db = mt_merge(last,f3kdb(grainY=64, grainC=64, Y=48, Cb=64, Cr=64),mt_binarize(36,true),luma=true)
+ConditionalSelect("ST", last, db)
+ConditionalReader("filter.txt", "ST", show=False)
+
+/*
+filter.txt
+
+type int
+default 0
+
+R 1140 1344 1
+R 9055 9522 1
+R 11856 12083 1
+R 12977 13053 1
+R 13174 13807 1
+R 14579 14745 1
+R 14984 15165 1
+R 24078 24248 1
+R 33351 34470 1
+R 35595 36938 1
+R 40453 42461 1
+R 49365 51431 1
+R 57776 58454 1
+R 58973 60783 1
+R 67141 67474 1
+R 71202 73469 1
+R 80732 81508 1
+R 115725 119046 1
+*/
