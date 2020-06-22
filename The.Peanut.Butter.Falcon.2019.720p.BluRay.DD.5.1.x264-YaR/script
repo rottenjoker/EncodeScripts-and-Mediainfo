@@ -6,6 +6,7 @@ db = f3kdb(grainY=32, grainC=32, Y=96, Cb=64, Cr=64)
 ConditionalSelect("ST", last, db)
 ConditionalReader("filter.txt", "ST", show=False)
 
+/*
 filter.txt
 
 type int
@@ -20,3 +21,4 @@ R 71317 71501 1
 R 102074 102196 1
 R 112417 112595 1
 R 112647 112698 1
+*/
