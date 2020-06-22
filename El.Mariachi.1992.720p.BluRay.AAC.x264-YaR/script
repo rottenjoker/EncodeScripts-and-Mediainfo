@@ -1,0 +1,3 @@
+FFVideoSource("C:\Users\rtj\Desktop\El.Mariachi.1992.BluRay.Remux.1080p.AVC.FLAC.2.0-HiFi.mkv")
+Crop(0, 20, -0, -20)
+z_Spline36Resize(1280, 694, dither="error_diffusion")
