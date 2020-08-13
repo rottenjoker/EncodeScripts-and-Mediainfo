@@ -1,0 +1,85 @@
+FFVideoSource("D:\NHD\Failan.2001.BluRay.Remux.1080p.AVC.DTS-HD.MA.5.1-NCmt.mkv")
+
+FillMargins(1, 0, 1, 0)
+
+#dirty lines/black borders
+BalanceBorders(cLeft = 3, cRight = 3, cTop = 3, thresh = 100, blur = 500)
+
+f2 = Fixer(top = 8, ctop = 14, cright = 14, radius = 40, chroma = yes)
+f3 = Fixer(top = 16, ctop = 50, chroma = yes)
+f4 = Crop(0, 4, 0, 0).AddBorders(0, 4, 0, 0).Fixer(top = 4, ctop = 10, radius = 40, chroma = yes)
+f5 = Crop(0, 2, 0, 0).AddBorders(0, 2, 0, 0).Fixer(top = 2, ctop = 6, radius = 40, chroma = yes)
+f10 = Fixer(top = 13, ctop = 13, chroma = yes)
+f11 = Fixer(left = 60, chroma = yes)
+f14 = Fixer(top = 8, radius = 2, chroma = yes)
+f16 = Fixer(top = 10, ctop = 50, chroma = yes)
+f17 = f5.Fixer(ctop = 10, chroma = yes)
+
+ConditionalFilter(f2, last, "ST", "=", "2")
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalFilter(f4, last, "ST", "=", "4")
+ConditionalFilter(f5, last, "ST", "=", "5")
+ConditionalFilter(f10, last, "ST", "=", "10")
+ConditionalFilter(f11, last, "ST", "=", "11")
+ConditionalFilter(f14, last, "ST", "=", "14")
+ConditionalFilter(f16, last, "ST", "=", "16")
+ConditionalFilter(f17, last, "ST", "=", "17")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+z_Spline36Resize(1278, 720, 1, 0, -1, 0, dither="error_diffusion")
+
+#deband/deblock
+f15 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 50, grainC = 50, Y = 60, Cb =60, Cr = 60, dynamic_grain = true), mt_binarize(31, true), luma = true)
+f6 = f15.BalanceBorders(cLeft = 10, thresh = 128, blur = 500)
+f7 = f15.BalanceBorders(cLeft = 16, thresh = 128, blur = 500)
+f8 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 60, Cb =60, Cr = 60, dynamic_grain = true), mt_binarize(28, true), luma = true)
+f9 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 60, Cb =60, Cr = 60, dynamic_grain = true), mt_binarize(36, true), luma = true)
+
+ConditionalFilter(f6, last, "ST", "=", "6")
+ConditionalFilter(f7, last, "ST", "=", "7")
+ConditionalFilter(f8, last, "ST", "=", "8")
+ConditionalFilter(f9, last, "ST", "=", "9")
+ConditionalFilter(f15, last, "ST", "=", "15")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+#myffinfo("Filtered")
+/*
+filter.txt
+
+type int
+default 0
+
+R 1660 2224 2
+R 3936 4278 3
+R 11062 11584 8
+R 41768 41981 16
+R 46261 46485 14
+R 53572 53742 16
+R 61062 61208 6
+R 61209 61409 7
+R 61449 61692 15
+R 64299 64490 16
+R 67998 68202 16
+R 73058 74150 9
+R 80475 80828 3
+R 82263 82471 16
+R 87796 88412 8
+R 88413 88630 9
+R 100686 100997 16
+R 101183 101289 10
+R 101290 101934 16
+R 105083 106268 4
+R 107561 109077 16
+R 109320 109375 11
+R 109376 110130 16
+R 110262 110790 16
+R 112394 112753 17
+R 140543 141602 16
+R 143275 144246 16
+R 144649 145124 16
+R 146051 148136 16
+R 148562 148728 16
+R 162687 164173 5
+*/
