@@ -1,0 +1,83 @@
+FFVideoSource("D:\BD\Take.the.Money.and.Run.1969.BluRay.Remux.1080p.AVC.DTS-HD.MA.2.0-TDD.mkv")
+Crop(2, 20, -2, -20)
+
+#dirty lines
+BalanceBorders(0, 0, 2, 2, 80, 100)
+f1 = Fixer(left = 6, right = 6, chroma = yes)
+f2 = BalanceBorders(0, 0, 0, 6, 120, 100).Fixer(cright = 8, chroma = yes)
+f3 = BalanceBorders(0, 0, 0, 9, 120, 200).Fixer(cright = 8, chroma = yes)
+f4 = BalanceBorders(0, 0, 0, 4, 120, 100).Fixer(cright = 8, chroma = yes)
+
+ConditionalFilter(f1, last, "ST", "=", "1")
+ConditionalFilter(f2, last, "ST", "=", "2")
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalFilter(f4, last, "ST", "=", "4")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+z_Spline36Resize(1280, 694, dither="error_diffusion")
+
+#deblock
+f5 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 100, grainC = 60, Y = 70, Cb =70, Cr = 70, dynamic_grain = true), mt_binarize(21, true), luma = true)
+
+ConditionalFilter(f5, last, "ST", "=", "5")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+
+#myffinfo("Filtered")
+
+/*
+type int
+default 0
+
+R 1814 2692 5
+R 4477 5307 5
+R 7799 7860 5
+R 9158 9913 5
+R 10489 10549 5
+R 11661 12152 1
+R 13748 13850 5
+R 15283 15404 5
+R 15777 16737 5
+R 18152 18327 5
+R 18517 18962 5
+R 19056 19091 5
+R 19116 19252 5
+R 19722 19983 5
+R 20759 20909 5
+R 21157 21225 5
+R 21254 21343 5
+R 25786 27236 5
+R 27590 28472 5
+R 31517 31728 5
+R 32331 33126 5
+R 33534 33775 5
+R 34750 35769 5
+R 36446 36593 5
+R 38699 38937 5
+R 39229 39318 5
+R 39765 40315 5
+R 40374 40668 5
+R 40948 41204 5
+R 44041 44186 5
+R 44762 44872 5
+R 48427 48732 5
+R 54416 54467 5
+R 55689 56232 5
+R 56615 56677 5
+R 64147 64636 5
+R 64895 65283 5
+R 78150 78425 4
+R 78426 78485 2
+R 78724 79489 5
+R 82134 82937 5
+R 86410 86520 5
+R 97668 97798 5
+R 98843 98932 5
+R 108980 109097 5
+R 112207 112262 3
+R 112365 113278 3
+R 119866 120399 5
+R 120774 121130 5
+*/
