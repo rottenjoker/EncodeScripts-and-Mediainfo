@@ -1,0 +1,49 @@
+FFVideoSource("D:\video.mkv")
+Crop(0, 138, -0, -138)
+z_Spline36Resize(1280, 536, dither="error_diffusion")
+
+#deband/deblock
+f1 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 70, Cb = 50, Cr = 50, dynamic_grain = true), mt_binarize(208, false), luma = true)
+f2 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 40, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(114, false), luma = true)
+f3 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 40, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(198, false), luma = true)
+f4 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 40, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(164, false), luma = true)
+f5 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 40, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(186, false), luma = true)
+f6 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 50, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(196, false), luma = true)
+f7 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 30, grainC = 20, Y = 60, Cb = 40, Cr = 40, dynamic_grain = true), mt_binarize(182, false), luma = true)
+
+ConditionalFilter(f1, last, "ST", "=", "1")
+ConditionalFilter(f2, last, "ST", "=", "2")
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalFilter(f4, last, "ST", "=", "4")
+ConditionalFilter(f5, last, "ST", "=", "5")
+ConditionalFilter(f6, last, "ST", "=", "6")
+ConditionalFilter(f7, last, "ST", "=", "7")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+
+
+#myffinfo("Filtered")
+
+/*
+type int
+default 0
+
+R 1880 2394 1 /3
+R 26895 26962 2 /2
+R 27395 27486 2 /2
+R 38140 38296 1 /3
+R 45198 45465 3 /1
+R 48959 49060 3 /1
+R 60407 61171 3 /3
+R 64938 65025 4 /1
+R 70556 70829 3 /2
+R 80118 80302 3 /2
+R 80524 81344 4 /3
+R 104457 104599 5 /2
+R 105084 105209 6 /2
+R 129404 129943 6 /2
+R 132940 133503 7 /3
+R 133504 133888 4 /3
+R 133889 134608 7 /3
+*/
