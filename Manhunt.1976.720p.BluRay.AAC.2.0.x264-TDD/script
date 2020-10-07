@@ -1,0 +1,20 @@
+FFVideoSource("D:\00000 - 2 - h264, 1080p24.mkv")
+Crop(0, 148, -0, -148).FillMargins(1, 0, 1, 1).BalanceBorders(0, 0, 3, 3, thresh = 128, blur = 50)
+
+z_Spline36Resize(1280, 522, 1, 0, -1, -1, dither="error_diffusion")
+
+f1 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 90, grainC = 40, Y = 60, Cb = 30, Cr = 30, dynamic_grain = true), mt_binarize(17, true), luma = true)
+
+ConditionalFilter(f1, last, "ST", "=", "1")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+#SelectRangeEvery(4000, 50, 5000)
+
+
+#myffinfo("Filtered")
+
+/*type int
+default 0
+
+R 138528 139085 1*/
