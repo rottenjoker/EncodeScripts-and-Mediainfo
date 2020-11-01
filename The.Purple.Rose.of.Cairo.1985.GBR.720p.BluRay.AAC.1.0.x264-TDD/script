@@ -1,0 +1,7 @@
+FFVideoSource("D:\BD\demux\video.mkv").trim(2883,121046)
+Crop(0, 20, -0, -20).FillMargins(1, 0, 1, 0)
+z_Spline36Resize(1280, 694, 1, 0, -1, 0, dither="error_diffusion")
+
+#SelectRangeEvery(2000, 50, 10000)
+
+#myffinfo("Source")
