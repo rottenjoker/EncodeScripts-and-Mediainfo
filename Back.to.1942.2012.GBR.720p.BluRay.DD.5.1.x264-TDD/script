@@ -1,0 +1,79 @@
+FFVideoSource("D:\BD\demux\video.mkv").Crop(0, 138, -0, -138)
+
+# global lines
+Fixrbr(0, -7).Fixrbr(803, -7)
+
+# borders/lines
+f3 = Fixer(left = 4, cleft = 4, radius = 40, chroma = true)
+f4 = Fixer(left = 10, right = 11, radius = 40, chroma = true)
+f5 = Fixcbr(0, -22).Fixcbr(1, 4).Fixcbr(1916, 6).Fixcbr(1917, -22).Fixer(right = 2, radius = 1, chroma = true)
+f6 = Fixcbr(14, 8).Fixcbr(13, 8).Fixcbr(12, 14).Fixcbr(11, 14).Fixcbr(10, 16).Fixcbr(9, 16).Fixcbr(8, 16).Fixcbr(7, 18).Fixcbr(6, 20).Fixcbr(5, 22).Fixcbr(4, 24).Fixcbr(3, 28).BalanceBorders(cleft = 12, thresh = 128, blur = 200).Fixer(left = 6, radius = 2, chroma = yes)
+f7 = Fixer(left = 2, radius = 1, chroma = true)
+f8 = Fixcbr(1, 16).Fixcbr(0, -12).Fixcbr(1918, 14).Fixcbr(1919, -16)
+f9 = Fixcbr(0, 20).Fixcbr(1, 10).Fixcbr(2, 6).Fixcbr(3, 4)
+f10 = Fixcbr(0, -10).Fixcbr(1, 6).Fixcbr(1918, 14).Fixcbr(1919, -26)
+
+ConditionalFilter(f3, last, "ST", "=", "3")
+ConditionalFilter(f4, last, "ST", "=", "4")
+ConditionalFilter(f5, last, "ST", "=", "5")
+ConditionalFilter(f6, last, "ST", "=", "6")
+ConditionalFilter(f7, last, "ST", "=", "7")
+ConditionalFilter(f8, last, "ST", "=", "8")
+ConditionalFilter(f9, last, "ST", "=", "9")
+ConditionalFilter(f10, last, "ST", "=", "10")
+
+z_Spline36Resize(1280, 536, dither="error_diffusion")
+
+# deband/deblock
+f1 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 80, grainC = 10, Y = 70, Cb =10, Cr = 10, dynamic_grain = true), mt_binarize(17, true), luma = true)
+f2 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 30, grainC = 10, Y = 70, Cb =10, Cr = 10, dynamic_grain = true), mt_binarize(228, false), luma = true)
+
+ConditionalFilter(f1, last, "ST", "=", "1")
+ConditionalFilter(f2, last, "ST", "=", "2")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+# SelectRangeEvery(2000, 50, 10000)
+
+#myffinfo("Filtered")
+
+
+/*type int
+default 0
+
+R 7989 8194 1
+R 17803 17856 1
+R 18542 18552 1
+R 42066 42458 1
+R 54439 54498 1
+R 54927 54989 1
+R 55082 55332 1
+R 55369 55432 1
+R 55815 55888 1
+R 55973 56014 1
+R 56455 56578 1
+R 57053 57100 1
+R 73473 73487 1
+R 90065 90186 1
+R 97933 98084 1
+R 178641 178698 1
+R 187352 187558 1
+R 196023 196069 1
+R 81609 81791 2
+R 99805 99819 2
+R 189757 189826 2
+R 20296 20360 3
+R 98442 98891 3
+R 99093 99133 3
+R 99173 99262 3
+R 70973 70992 4
+R 73355 73384 5
+R 169979 170061 6
+R 177915 178000 7
+R 178178 178271 7
+R 178300 178307 7
+R 178834 178880 7
+R 178966 179030 7
+R 101058 101173 8
+R 174855 174899 9
+R 99461 99482 10*/
