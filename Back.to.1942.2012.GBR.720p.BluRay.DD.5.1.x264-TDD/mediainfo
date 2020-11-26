@@ -1,0 +1,103 @@
+General
+Unique ID                                : 331787288604621844577077750714935726484 (0xF99BE84D457F46B4B2CBCA3C2DAAD194)
+Complete name                            : Back.to.1942.2012.GBR.720p.BluRay.DD.5.1.x264-TDD.mkv
+Format                                   : Matroska
+Format version                           : Version 4
+File size                                : 10.1 GiB
+Duration                                 : 2 h 26 min
+Overall bit rate                         : 9 892 kb/s
+Movie name                               : Yi jiu si er (AKA: Back to 1942) (2012) - GBR - BluRay - 720p x264 - TDD
+Encoded date                             : UTC 2020-11-25 14:37:35
+Writing application                      : mkvmerge v51.0.0 ('I Wish') 64-bit
+Writing library                          : libebml v1.4.0 + libmatroska v1.6.2
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings                          : CABAC / 9 Ref Frames
+Format settings, CABAC                   : Yes
+Format settings, Reference frames        : 9 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 2 h 26 min
+Bit rate                                 : 9 250 kb/s
+Width                                    : 1 280 pixels
+Height                                   : 536 pixels
+Display aspect ratio                     : 2.40:1
+Frame rate mode                          : Constant
+Frame rate                               : 24.000 FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.562
+Stream size                              : 9.44 GiB (94%)
+Title                                    : x264 / 9250 kbps / 720p / 24 fps / 2.40:1 / High Profile 4.1
+Writing library                          : x264 core 161 r3027+52M 541aa21 devel [(8 & 10)-bit@all X86_64]
+Encoding settings                        : cabac=1 / ref=9 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / fade_compensate=0.00 / psy_rd=1.00:0.00 / mixed_ref=1 / me_range=32 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=16 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=24 / scenecut=40 / intra_refresh=0 / rc_lookahead=250 / rc=crf / mbtree=0 / crf=16.3000 / qcomp=0.65 / qpmin=0:0:0 / qpmax=69:69:69 / qpstep=4 / vbv_maxrate=62500 / vbv_bufsize=78125 / crf_max=0.0 / nal_hrd=none / filler=0 / ip_ratio=1.35 / pb_ratio=1.25 / aq=3:0.63 / aq-sensitivity=10.00 / aq-factor=1.00:1.00:1.00 / aq2=0 / aq3=0 / zones=7989,8194,b=1.3/17803,17856,b=1.3/18542,18552,b=1.4/42066,42458,b=1.3/54927,54989,b=1.3/55082,55332,b=1.3/55369,55432,b=1.3/55815,55888,b=1.3/55973,56014,b=1.3/56455,56578,b=1.3/57053,57100,b=1.3/73473,73487,b=1.4/81609,81791,b=1.4/90065,90186,b=1.3/97933,98084,b=1.3/99805,99819,b=1.4/178641,178698,b=1.3/187352,187558,b=1.3/189757,189826,b=1.4/196023,196069,b=1.3/203219,210315,crf=22
+Language                                 : Chinese
+Default                                  : Yes
+Forced                                   : No
+
+Audio
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Commercial name                          : Dolby Digital
+Codec ID                                 : A_AC3
+Duration                                 : 2 h 26 min
+Bit rate mode                            : Constant
+Bit rate                                 : 640 kb/s
+Channel(s)                               : 6 channels
+Channel layout                           : L R C LFE Ls Rs
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 31.250 FPS (1536 SPF)
+Compression mode                         : Lossy
+Stream size                              : 669 MiB (6%)
+Title                                    : DD / 5.1 / 48kHz / 640 kbps
+Language                                 : Chinese
+Service kind                             : Complete Main
+Default                                  : Yes
+Forced                                   : No
+
+Text #1
+ID                                       : 3
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 2 h 19 min
+Bit rate                                 : 46 b/s
+Count of elements                        : 1641
+Stream size                              : 47.5 KiB (0%)
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 4
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 2 h 18 min
+Bit rate                                 : 37 b/s
+Count of elements                        : 2098
+Stream size                              : 38.2 KiB (0%)
+Title                                    : Chinese (Simplified)
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:Chapter 01
+00:15:19.583                             : en:Chapter 02
+00:23:11.833                             : en:Chapter 03
+00:37:13.250                             : en:Chapter 04
+00:46:37.292                             : en:Chapter 05
+01:00:20.875                             : en:Chapter 06
+01:11:30.667                             : en:Chapter 07
+01:26:19.583                             : en:Chapter 08
+01:36:01.042                             : en:Chapter 09
+01:49:37.500                             : en:Chapter 10
+02:02:30.208                             : en:Chapter 11
+02:12:40.625                             : en:Chapter 12
