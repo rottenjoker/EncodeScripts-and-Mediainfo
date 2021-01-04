@@ -1,0 +1,284 @@
+General
+Unique ID                                : 86280999807117490610994731541422751790 (0x40E91DB9C78B1BC9D43F4BEBB4E9402E)
+Complete name                            : Tokyo Godfathers.2003.USA.720p.BluRay.DD.5.1.x264-TDD.mkv
+Format                                   : Matroska
+Format version                           : Version 4
+File size                                : 5.27 GiB
+Duration                                 : 1 h 32 min
+Overall bit rate                         : 8 117 kb/s
+Movie name                               : Tôkyô goddofâzâzu (AKA: Tokyo Godfathers) (2003) - 4K Remaster - USA - BluRay - 720p x264 - TDD
+Encoded date                             : UTC 2021-01-02 03:47:47
+Writing application                      : mkvmerge v51.0.0 ('I Wish') 64-bit
+Writing library                          : libebml v1.4.0 + libmatroska v1.6.2
+Attachments                              : KinesisStd-Bold.otf / KTF-Roadstar.ttf / Lara Prints.ttf / LT.ttf / LTFinnegan_MediumItalic.ttf / TABITHA.TTF / ArtificeSSK.ttf / FRADM.TTF / FranKleinBold.ttf / KGFallForYouBold.ttf / Jambono-Regular.ttf / LCALLIG.TTF / MetaPro-MediumItalic.otf / TCCB____.TTF / TCCEB.TTF / TCCM____.TTF / ZURICHCI_1.TTF / ALTERNAN_0.TTF / HITROAD.TTF
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings                          : CABAC / 9 Ref Frames
+Format settings, CABAC                   : Yes
+Format settings, Reference frames        : 9 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1 h 32 min
+Bit rate                                 : 6 823 kb/s
+Width                                    : 1 280 pixels
+Height                                   : 692 pixels
+Display aspect ratio                     : 1.85:1
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 (24000/1001) FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.321
+Stream size                              : 4.43 GiB (84%)
+Title                                    : x264 / 6823 kbps / 720p / 23.976 fps / 1.85:1 / High Profile 4.1
+Writing library                          : x264 core 161 r3027+52M 541aa21 devel [(8 & 10)-bit@all X86_64]
+Encoding settings                        : cabac=1 / ref=9 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / fade_compensate=0.00 / psy_rd=1.03:0.00 / mixed_ref=1 / me_range=32 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=16 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=24 / scenecut=40 / intra_refresh=0 / rc_lookahead=250 / rc=crf / mbtree=0 / crf=15.6000 / qcomp=0.68 / qpmin=0:0:0 / qpmax=69:69:69 / qpstep=4 / vbv_maxrate=62500 / vbv_bufsize=78125 / crf_max=0.0 / nal_hrd=none / filler=0 / ip_ratio=1.35 / pb_ratio=1.25 / aq=3:0.72 / aq-sensitivity=10.00 / aq-factor=1.00:1.00:1.00 / aq2=0 / aq3=0 / zones=146,242,crf=14.6/1144,1305,crf=14.6/1306,1551,crf=14.6/2291,2427,crf=14.6/9592,9598,crf=14.6/11199,11294,crf=14.6/14889,14998,crf=14.6/15191,15532,crf=14.6/16194,16569,crf=14.6/16570,16674,crf=14.6/17686,17829,crf=14.6/17830,18004,crf=14.6/18250,18299,crf=14.6/18469,18558,crf=14.6/19084,19193,crf=14.6/19323,19384,crf=14.6/19385,19492,crf=14.6/19868,20002,crf=14.6/27087,27194,crf=14.6/27586,27667,crf=14.6/32967,33055,crf=14.6/34581,34599,crf=14.6/34858,34897,crf=14.6/35072,35116,crf=14.6/35645,35713,crf=14.6/35834,36679,crf=14.6/36849,37126,crf=14.6/37221,37515,crf=14.6/37659,38398,crf=14.6/38471,38534,crf=14.6/38683,38970,crf=14.6/39119,39284,crf=14.6/39460,41474,crf=14.6/42068,42307,crf=14.6/42529,42769,crf=14.6/42961,43058,crf=14.6/45160,45216,crf=14.6/45280,45529,crf=14.6/45530,45577,crf=14.6/45578,45649,crf=14.6/47061,47398,crf=14.6/47581,48031,crf=14.6/48132,48425,crf=14.6/48498,48617,crf=14.6/48618,49067,crf=14.6/49068,49126,crf=14.6/49127,49246,crf=14.6/49247,49318,crf=14.6/49319,49402,crf=14.6/49403,49722,crf=14.6/49723,49806,crf=14.6/49861,49980,crf=14.6/50014,50157,crf=14.6/50158,50205,crf=14.6/50242,50433,crf=14.6/50650,50723,crf=14.6/50724,50799,crf=14.6/50800,50844,crf=14.6/51657,51770,crf=14.6/52018,52252,crf=14.6/53168,53336,crf=14.6/53895,54050,crf=14.6/54051,54546,crf=14.6/54547,54678,crf=14.6/54757,55015,crf=14.6/56678,56875,crf=14.6/57560,57649,crf=14.6/58736,58777,crf=14.6/58913,58960,crf=14.6/59816,59900,crf=14.6/60069,60232,crf=14.6/60519,60582,crf=14.6/60731,61234,crf=14.6/63155,63228,crf=14.6/63508,63603,crf=14.6/63736,63879,crf=14.6/63880,64066,crf=14.6/64067,64845,crf=14.6/65102,65137,crf=14.6/65158,65262,crf=14.6/65263,65476,crf=14.6/65537,66020,crf=14.6/66417,66935,crf=14.6/68718,68861,crf=14.6/68931,69191,crf=14.6/69748,69937,crf=14.6/69938,70088,crf=14.6/70089,70403,crf=14.6/70584,70802,crf=14.6/71808,72095,crf=14.6/72888,73011,crf=14.6/73214,73654,crf=14.6/73858,74762,crf=14.6/74861,74956,crf=14.6/77875,78038,crf=14.6/78160,78902,crf=14.6/79676,79795,crf=14.6/80681,80776,crf=14.6/81171,81336,crf=14.6/82165,82842,crf=14.6/84851,84968,crf=14.6/84969,85202,crf=14.6/85203,85486,crf=14.6/85655,86143,crf=14.6/88758,89487,crf=14.6/90469,90580,crf=14.6/90668,91014,crf=14.6/92014,92444,crf=14.6/92577,92648,crf=14.6/92841,92948,crf=14.6/93345,93428,crf=14.6/94217,94476,crf=14.6/94477,94788,crf=14.6/95073,95240,crf=14.6/96386,96717,crf=14.6/96982,97946,crf=14.6/97947,98282,crf=14.6/99352,99404,crf=14.6/101571,102285,crf=14.6/102286,102672,crf=14.6/102973,103064,crf=14.6/103065,103215,crf=14.6/103216,103883,crf=14.6/104079,104273,crf=14.6/104642,104948,crf=14.6/105129,105344,crf=14.6/105345,105702,crf=14.6/108068,108207,crf=14.6/108519,109580,crf=14.6/109793,109897,crf=14.6/109931,109966,crf=14.6/110680,110786,crf=14.6/110787,111051,crf=14.6/111821,111976,crf=14.6/112524,112619,crf=14.6/112754,112783,crf=14.6/112824,112876,crf=14.6/112877,112913,crf=14.6/112914,113276,crf=14.6/113384,115558,crf=14.6/116009,116036,crf=14.6/116705,116826,crf=14.6/118811,118952,crf=14.6/119901,119960,crf=14.6/120481,120576,crf=14.6/120837,120860,crf=14.6/121702,121964,crf=14.6/121989,122036,crf=14.6/122037,122104,crf=14.6/122105,122123,crf=14.6/122124,122216,crf=14.6/122758,122831,crf=14.6/125534,125869,crf=14.6/125870,126252,crf=14.6/126253,133608,crf=22
+Language                                 : Japanese
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Commercial name                          : Dolby Digital
+Codec ID                                 : A_AC3
+Duration                                 : 1 h 31 min
+Bit rate mode                            : Constant
+Bit rate                                 : 640 kb/s
+Channel(s)                               : 6 channels
+Channel layout                           : L R C LFE Ls Rs
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 31.250 FPS (1536 SPF)
+Compression mode                         : Lossy
+Stream size                              : 420 MiB (8%)
+Title                                    : DD / 5.1 / 48kHz / 640 kbps
+Language                                 : Japanese
+Service kind                             : Complete Main
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Commercial name                          : Dolby Digital
+Codec ID                                 : A_AC3
+Duration                                 : 1 h 32 min
+Bit rate mode                            : Constant
+Bit rate                                 : 640 kb/s
+Channel(s)                               : 6 channels
+Channel layout                           : L R C LFE Ls Rs
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 31.250 FPS (1536 SPF)
+Compression mode                         : Lossy
+Stream size                              : 425 MiB (8%)
+Title                                    : Dub / DD / 5.1 / 48kHz / 640 kbps
+Language                                 : English
+Service kind                             : Complete Main
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 1 h 31 min
+Bit rate                                 : 65 b/s
+Count of elements                        : 1447
+Stream size                              : 43.6 KiB (0%)
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 5
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 1 h 31 min
+Bit rate                                 : 70 b/s
+Count of elements                        : 1613
+Stream size                              : 46.8 KiB (0%)
+Title                                    : SDH
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #3
+ID                                       : 6
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 30 min
+Bit rate                                 : 171 b/s
+Count of elements                        : 1449
+Compression mode                         : Lossless
+Stream size                              : 114 KiB (0%)
+Title                                    : Commie
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #4
+ID                                       : 7
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 30 min
+Bit rate                                 : 75 b/s
+Count of elements                        : 334
+Compression mode                         : Lossless
+Stream size                              : 49.8 KiB (0%)
+Title                                    : Commie_signs
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #5
+ID                                       : 8
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 30 min
+Bit rate                                 : 180 b/s
+Count of elements                        : 1262
+Compression mode                         : Lossless
+Stream size                              : 120 KiB (0%)
+Title                                    : Simplified
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Text #6
+ID                                       : 9
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 79 b/s
+Count of elements                        : 969
+Compression mode                         : Lossless
+Stream size                              : 50.5 KiB (0%)
+Language                                 : Danish
+Default                                  : No
+Forced                                   : No
+
+Text #7
+ID                                       : 10
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 84 b/s
+Count of elements                        : 1049
+Compression mode                         : Lossless
+Stream size                              : 53.5 KiB (0%)
+Language                                 : Dutch
+Default                                  : No
+Forced                                   : No
+
+Text #8
+ID                                       : 11
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 73 b/s
+Count of elements                        : 849
+Compression mode                         : Lossless
+Stream size                              : 46.8 KiB (0%)
+Language                                 : Finnish
+Default                                  : No
+Forced                                   : No
+
+Text #9
+ID                                       : 12
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 80 b/s
+Count of elements                        : 1052
+Compression mode                         : Lossless
+Stream size                              : 51.1 KiB (0%)
+Language                                 : Norwegian
+Default                                  : No
+Forced                                   : No
+
+Text #10
+ID                                       : 13
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 144 b/s
+Count of elements                        : 1113
+Compression mode                         : Lossless
+Stream size                              : 91.7 KiB (0%)
+Language                                 : Russian
+Default                                  : No
+Forced                                   : No
+
+Text #11
+ID                                       : 14
+Format                                   : PGS
+Muxing mode                              : zlib
+Codec ID                                 : S_HDMV/PGS
+Codec ID/Info                            : Picture based subtitle format used on BDs/HD-DVDs
+Duration                                 : 1 h 31 min
+Bit rate                                 : 25.9 kb/s
+Count of elements                        : 2248
+Stream size                              : 16.9 MiB (0%)
+Language                                 : Spanish
+Default                                  : No
+Forced                                   : No
+
+Text #12
+ID                                       : 15
+Format                                   : ASS
+Codec ID                                 : S_TEXT/ASS
+Codec ID/Info                            : Advanced Sub Station Alpha
+Duration                                 : 1 h 26 min
+Bit rate                                 : 81 b/s
+Count of elements                        : 1052
+Compression mode                         : Lossless
+Stream size                              : 51.8 KiB (0%)
+Language                                 : Swedish
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:09.759                             : en:Start
+00:08:38.517                             : en:Guardians for a Night
+00:12:07.476                             : en:Gin's Past
+00:14:13.310                             : en:Second Thoughts
+00:16:49.049                             : en:The Key
+00:17:33.010                             : en:Something Smells
+00:20:53.293                             : en:The Cemetery
+00:23:11.890                             : en:Blocking a Public Thoroughfare
+00:25:35.366                             : en:His Daughter's Wedding
+00:26:49.732                             : en:"Her Name's Sachiko."
+00:27:48.875                             : en:Kidnapped
+00:29:51.831                             : en:"We're Not Action-Movie Heroes."
+00:33:35.054                             : en:Last Request
+00:35:32.338                             : en:The Nursing Station
+00:36:29.311                             : en:New Year's Clean-up
+00:38:00.569                             : en:Miyuki's Past
+00:40:57.162                             : en:Lost Children Found
+00:45:33.438                             : en:Hana's Past
+00:52:05.038                             : en:The Neighbours Remember
+00:54:55.416                             : en:A Child Never Forgets Its Parents
+01:00:35.756                             : en:Gin's Daughter
+01:05:40.477                             : en:The Weeping Red Devil
+01:08:05.205                             : en:Sachiko
+01:10:43.822                             : en:Sachiko's Husband
+01:16:10.440                             : en:In Pursuit of Stolen Goods
+01:22:06.212                             : en:"I Want to Be Reborn."
+01:24:35.111                             : en:Hana Saves the Baby
+01:25:23.034                             : en:The Final Miracle
