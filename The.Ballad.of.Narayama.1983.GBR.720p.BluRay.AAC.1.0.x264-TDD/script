@@ -1,0 +1,121 @@
+FFVideoSource("D:\BD\The.Ballad.of.Narayama.1983.REPACK.GBR.BluRay.Remux.1080p.AVC.DTS-HD.MA.1.0-TDD.mkv")
+Crop(0, 20, -0, -20).FillMargins(0, 1, 0, 1)
+
+# dirty lines
+Fixer(ctop = 1, cbottom = 1, chroma = true).Fillborders(bottom = 2)
+
+z_Spline36Resize(1280, 692, 0, 1, 0, -1, dither="error_diffusion")
+
+# deband/deblock
+db1 = mt_merge(last, f3kdb(dither_algo = 3, range = 30, grainY = 100, grainC = 90, Y = 90, Cb = 90, Cr = 90, dynamic_grain = true), mt_binarize(26, true), luma = true)
+db2 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 100, grainC = 90, Y = 90, Cb = 90, Cr = 90, dynamic_grain = true), mt_binarize(30, true), luma = true)
+db3 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 100, grainC = 90, Y = 90, Cb = 90, Cr = 90, dynamic_grain = true), mt_binarize(22, true), luma = true)
+db4 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 100, grainC = 90, Y = 90, Cb = 90, Cr = 90, dynamic_grain = true), mt_binarize(26, true), luma = true)
+db5 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 100, grainC = 90, Y = 90, Cb = 90, Cr = 90, dynamic_grain = true), mt_binarize(34, true), luma = true)
+
+ConditionalFilter(db1, last, "ST", "=", "1")
+ConditionalFilter(db2, last, "ST", "=", "2")
+ConditionalFilter(db3, last, "ST", "=", "3")
+ConditionalFilter(db4, last, "ST", "=", "4")
+ConditionalFilter(db5, last, "ST", "=", "5")
+
+ConditionalReader("filter.txt", "ST", show = False)
+
+
+
+myffinfo("Filtered")
+
+
+/*type int
+default 0
+
+R 336 355 1
+R 638 654 1
+R 675 697 1
+R 4481 4699 2
+R 4843 4923 2
+R 8451 8760 1
+R 9101 10526 3
+R 12386 12431 4
+R 12698 13344 5
+R 13739 14281 2
+R 14361 14758 2
+R 14759 16917 4
+R 18873 19097 4
+R 19098 22801 2
+R 23281 23476 2
+R 24017 24773 2
+R 25092 25333 2
+R 25545 25863 2
+R 26140 27429 2
+R 28381 29474 2
+R 29709 32367 2
+R 32636 33444 2
+R 33445 33822 5
+R 33823 34412 2
+R 35649 40653 4
+R 40802 41385 4
+R 41740 42079 4
+R 42433 42643 4
+R 42680 42865 4
+R 43097 43664 2
+R 43665 46770 4
+R 47329 49298 3
+R 49558 50206 4
+R 51881 52251 4
+R 54237 54602 2
+R 55918 56386 4
+R 56387 58310 3
+R 61179 61393 3
+R 64972 66454 2
+R 67172 67384 4
+R 67422 68444 4
+R 68519 68711 2
+R 68796 70261 4
+R 70262 70940 3
+R 71231 71551 4
+R 72058 76024 3
+R 76025 76324 2
+R 76325 76622 4
+R 76623 82459 3
+R 82460 82563 2
+R 82953 83596 3
+R 83780 84067 4
+R 84068 88814 3
+R 89788 90313 4
+R 90314 107507 3
+R 107821 108226 4
+R 108514 112187 4
+R 114440 114867 4
+R 115137 116077 2
+R 116078 116855 4
+R 117271 117359 4
+R 117605 120207 4
+R 120208 120535 3
+R 120536 122954 4
+R 124092 131053 4
+R 131054 133454 3
+R 133455 137926 4
+R 138171 140612 4
+R 141088 142292 3
+R 142459 142659 4
+R 142922 150448 4
+R 151083 151528 4
+R 151792 153620 4
+R 153621 154546 2
+R 154547 156632 4
+R 156701 156904 4
+R 160118 161373 4
+R 163350 164069 4
+R 164249 164612 4
+R 165148 166011 4
+R 166173 166638 4
+R 167380 171719 4
+R 172041 174224 4
+R 175129 175324 4
+R 175675 175807 4
+R 175915 176543 4
+R 177666 177876 4
+R 179947 182456 4
+R 182595 183815 3
+R 183816 186767 4*/
