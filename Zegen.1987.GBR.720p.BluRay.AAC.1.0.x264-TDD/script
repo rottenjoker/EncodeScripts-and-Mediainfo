@@ -1,0 +1,66 @@
+FFVideoSource("D:\BD\Zegen.1987.GBR.BluRay.Remux.1080p.AVC.DTS-HD.MA.1.0-TDD.mkv")
+Crop(0, 20, -0, -20).FillMargins(0, 1, 0, 1)
+
+# dirty lines
+Fixer(left = 1, top = 2, right = 1, ctop = 1, cbottom = 1, chroma = true).Fillborders(bottom = 2)
+
+vd1 = bbmod(cleft = 4, cbottom = 5, thresh = 128, blur = 999).Fixer(cleft = 4, chroma = yes)
+
+trim(0, 80541) + trim(vd1, 80542, 80686) + trim(80687, 0)
+
+z_Spline36Resize(1280, 692, 0, 1, 0, -1, dither="error_diffusion")
+
+# deband/deblock
+db1 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 140, grainC = 110, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(26, true), luma = true)
+db2 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 140, grainC = 110, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(22, true), luma = true)
+db3 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 140, grainC = 110, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(30, true), luma = true)
+db4 = mt_merge(last, f3kdb(dither_algo = 3, range = 20, grainY = 150, grainC = 150, Y = 140, Cb = 130, Cr = 130, dynamic_grain = true), mt_binarize(36, true), luma = true)
+
+ConditionalFilter(db1, last, "ST", "=", "1")
+ConditionalFilter(db2, last, "ST", "=", "2")
+ConditionalFilter(db3, last, "ST", "=", "3")
+ConditionalFilter(db4, last, "ST", "=", "4")
+
+ConditionalReader("filter_zg.txt", "ST", show = False)
+#SelectRangeEvery(1000, 50, 20000)
+myffinfo("Filtered")
+
+/*type int
+default 0
+
+R 13 219 1
+R 461 495 1
+R 772 798 1
+R 4916 5522 2
+R 8373 8508 1
+R 8575 8822 1
+R 10819 11968 1
+R 29424 29730 1
+R 53749 54068 1
+R 59300 60600 1
+R 62653 62915 4
+R 80111 80541 1
+R 84657 85576 1
+R 90295 90718 1
+R 97069 97114 1
+R 103406 103459 1
+R 109456 109725 1
+R 116054 117305 1
+R 117745 118388 1
+R 130890 131967 1
+R 147493 148915 1
+R 164932 165284 3
+R 167246 167662 3
+R 171420 171697 3
+R 171698 171842 1
+R 171843 171901 2
+R 171902 171996 1
+R 171997 172086 2
+R 172087 172317 1
+R 172318 172908 3
+R 172909 173252 1
+R 175558 175619 1
+R 177043 177199 1
+R 177561 177675 1
+R 177976 178113 1
+R 179149 179195 3*/
