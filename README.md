@@ -1,4 +1,4 @@
-# EncodeScripts-and-Mediainfo 
+# EncodeScripts and Mediainfo 
 Personal encodes.
 
 ### ![image](https://img43.pixhost.to/images/300/152420800_quality.gif) Golden Popcorn
