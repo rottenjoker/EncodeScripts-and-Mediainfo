@@ -1,0 +1,157 @@
+FFVideoSource("D:\BD\The Wild Goose Lake\video.mkv")
+Crop(0, 32, -0, -32).FillMargins(0, 1, 0, 1)
+
+# lines/borders
+b1 = Fixer(1, 6, 1, 6, chroma = true)
+b2 = FillBorders(0, 2, 0, 2).bbmod(cleft = 2, ctop = 3, cright = 1, cbottom = 3, thresh = 128, blur = 999)
+b3 = FillBorders(0, 5, 0, 2).bbmod(cleft = 2, ctop = 6, cright = 1, cbottom = 3, thresh = 128, blur = 999)
+b4 = FillBorders(0, 2, 0, 5).bbmod(cleft = 2, ctop = 3, cright = 1, cbottom = 6, thresh = 128, blur = 999)
+
+trim(0,854)+trim(b1, 855, 974)+trim(975, 3385)+trim(b2, 3386, 34043)+trim(b3, 34044, 34093)+trim(b2, 34094, 78685)+trim(b4, 78686, 78986)+trim(b2, 78987, 0)
+
+z_Spline36Resize(1280, 676, 0, 1, 0, -1, dither="error_diffusion")
+
+# deband/deblock
+db1 = f3kdb(dither_algo = 3, range = 15, grainY = 60, grainC = 60, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true)
+db2 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(40, true), luma = true)
+db3 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(48, true), luma = true)
+db4 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(36, true), luma = true)
+db5 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(28, true), luma = true)
+db6 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(56, true), luma = true)
+db7 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(80, true), luma = true)
+db8 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(188, false), luma = true)
+db9 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(132, false), luma = true)
+db10 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(124, false), luma = true)
+db11 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(92, false), luma = true)
+db12 = mt_merge(last, f3kdb(dither_algo = 3, range = 15, grainY = 80, grainC = 80, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true), mt_binarize(160, false), luma = true)
+db13 = f3kdb(dither_algo = 3, range = 31, grainY = 60, grainC = 60, Y = 100, Cb = 100, Cr = 100, dynamic_grain = true)
+
+ConditionalFilter(db1, last, "ST", "=", "1")
+ConditionalFilter(db2, last, "ST", "=", "2")
+ConditionalFilter(db3, last, "ST", "=", "3")
+ConditionalFilter(db4, last, "ST", "=", "4")
+ConditionalFilter(db5, last, "ST", "=", "5")
+ConditionalFilter(db6, last, "ST", "=", "6")
+ConditionalFilter(db7, last, "ST", "=", "7")
+ConditionalFilter(db8, last, "ST", "=", "8")
+ConditionalFilter(db9, last, "ST", "=", "9")
+ConditionalFilter(db10, last, "ST", "=", "10")
+ConditionalFilter(db11, last, "ST", "=", "11")
+ConditionalFilter(db12, last, "ST", "=", "12")
+ConditionalFilter(db13, last, "ST", "=", "13")
+
+ConditionalReader("filter_gl.txt", "ST", show = False)
+
+#myFFInfo("Filtered")
+
+/*type int
+default 0
+
+R 168 405 1
+R 408 838 2
+R 855 974 1
+R 1018 1228 1
+R 3795 3906 1
+R 3907 4530 3
+R 8508 10784 4
+R 11038 11200 4
+R 11536 12067 5
+R 12187 12844 5
+R 13461 13596 5
+R 13668 14821 5
+R 14989 15218 5
+R 16035 16155 5
+R 16714 16826 5
+R 17185 17375 5
+R 17944 17960 3
+R 19353 19750 5
+R 21596 21777 5
+R 21778 22067 4
+R 22114 25789 5
+R 25790 25967 4
+R 26116 26331 4
+R 26332 26786 5
+R 27011 27352 5
+R 27773 30789 5
+R 31111 33220 4
+R 33221 33971 5
+R 33972 34018 2
+R 34019 34093 1
+R 34094 34117 2
+R 34118 34160 3
+R 34161 34204 1
+R 34205 34235 2
+R 34236 34483 4
+R 34484 34898 3
+R 34990 35102 3
+R 35103 35579 4
+R 35914 35990 6
+R 35991 36204 3
+R 36480 36628 4
+R 36629 36919 1
+R 36920 37000 3
+R 37001 37122 2
+R 37382 37561 4
+R 38401 38448 7
+R 38449 38911 5
+R 39452 39561 8
+R 39562 39689 9
+R 39893 40075 4
+R 40076 40143 3
+R 42868 42893 10
+R 42894 42941 4
+R 42942 43126 10
+R 43244 43743 9
+R 44146 45899 3
+R 46892 47384 2
+R 49437 50030 5
+R 57707 58217 9
+R 58218 59086 5
+R 64622 65037 5
+R 65316 65348 4
+R 65452 65863 4
+R 66719 66810 5
+R 67651 68050 5
+R 68337 71009 5
+R 73091 75535 5
+R 75536 76326 1
+R 77808 78685 5
+R 80004 80467 5
+R 80468 81078 1
+R 81376 81735 4
+R 82023 82210 4
+R 82388 82652 5
+R 83218 83527 5
+R 83918 91035 5
+R 91036 91179 1
+R 91180 91957 5
+R 92486 92509 1
+R 93616 93709 1
+R 94290 95704 5
+R 96113 96258 5
+R 96259 96560 11
+R 96561 97103 12
+R 97182 97672 12
+R 97752 98302 12
+R 98303 99904 8
+R 105275 107280 5
+R 107281 107450 13
+R 107451 109419 5
+R 111466 114650 5
+R 117726 119648 5
+R 120052 120912 5
+R 121028 126666 5
+R 128052 128159 5
+R 128793 129445 5
+R 129757 130878 5
+R 132062 132147 5
+R 132148 132281 1
+R 132404 141176 5
+R 141447 142694 5
+R 144283 145206 5
+R 147303 147734 1
+R 148265 148511 5
+R 148706 148887 5
+R 149502 150569 2
+R 150835 150955 3
+R 150956 151258 3*/
