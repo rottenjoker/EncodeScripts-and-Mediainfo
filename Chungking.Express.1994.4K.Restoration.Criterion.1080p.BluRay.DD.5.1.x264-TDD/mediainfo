@@ -1,0 +1,126 @@
+General
+Unique ID                                : 56106560898456249681620047390858841009 (0x2A35BB06B504CA983EACAE2B86B08BB1)
+Complete name                            : Chungking.Express.1994.4K.Restoration.Criterion.1080p.BluRay.DD.5.1.x264-TDD.mkv
+Format                                   : Matroska
+Format version                           : Version 4
+File size                                : 16.5 GiB
+Duration                                 : 1 h 42 min
+Overall bit rate                         : 23.0 Mb/s
+Movie name                               : Chung Hing sam lam (AKA: Chungking Express) (1994) - 4K Restoration - Criterion - BluRay - 1080p x264 - TDD
+Encoded date                             : UTC 2021-04-21 14:47:36
+Writing application                      : mkvmerge v55.0.0 ('Waiting For Space') 64-bit
+Writing library                          : libebml v1.4.2 + libmatroska v1.6.4
+
+Video
+ID                                       : 1
+Format                                   : AVC
+Format/Info                              : Advanced Video Codec
+Format profile                           : High@L4.1
+Format settings                          : CABAC / 4 Ref Frames
+Format settings, CABAC                   : Yes
+Format settings, Reference frames        : 4 frames
+Codec ID                                 : V_MPEG4/ISO/AVC
+Duration                                 : 1 h 42 min
+Bit rate                                 : 22.3 Mb/s
+Width                                    : 1 798 pixels
+Height                                   : 1 080 pixels
+Display aspect ratio                     : 5:3
+Frame rate mode                          : Constant
+Frame rate                               : 23.976 (24000/1001) FPS
+Color space                              : YUV
+Chroma subsampling                       : 4:2:0
+Bit depth                                : 8 bits
+Scan type                                : Progressive
+Bits/(Pixel*Frame)                       : 0.479
+Stream size                              : 16.0 GiB (97%)
+Title                                    : x264 / 22281 kbps / 1080p / 23.976 fps / 5:3 / High Profile 4.1
+Writing library                          : x264 core 161 r3048+58M 9491639 devel [(8 & 10)-bit@all X86_64]
+Encoding settings                        : cabac=1 / ref=4 / deblock=1:-3:-3 / analyse=0x3:0x113 / me=umh / subme=11 / psy=1 / fade_compensate=0.00 / psy_rd=0.95:0.00 / mixed_ref=1 / me_range=48 / chroma_me=1 / trellis=2 / 8x8dct=1 / cqm=0 / deadzone=21,11 / fast_pskip=0 / chroma_qp_offset=-2 / threads=6 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=0 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / fgo=0 / bframes=16 / b_pyramid=2 / b_adapt=2 / b_bias=0 / direct=3 / weightb=1 / open_gop=0 / weightp=2 / keyint=250 / keyint_min=24 / scenecut=40 / intra_refresh=0 / rc_lookahead=250 / rc=crf / mbtree=0 / crf=17.2000 / qcomp=0.70 / qpmin=0:0:0 / qpmax=69:69:69 / qpstep=4 / vbv_maxrate=62500 / vbv_bufsize=78125 / crf_max=0.0 / nal_hrd=none / filler=0 / ip_ratio=1.30 / pb_ratio=1.20 / aq=1:0.83 / aq-sensitivity=10.00 / aq-factor=1.00:1.00:1.00 / aq2=0 / aq3=0 / zones=0,792,crf=22/144106,147996,crf=22
+Language                                 : Chinese
+Default                                  : Yes
+Forced                                   : No
+
+Audio #1
+ID                                       : 2
+Format                                   : AC-3
+Format/Info                              : Audio Coding 3
+Commercial name                          : Dolby Digital
+Codec ID                                 : A_AC3
+Duration                                 : 1 h 42 min
+Bit rate mode                            : Constant
+Bit rate                                 : 640 kb/s
+Channel(s)                               : 6 channels
+Channel layout                           : L R C LFE Ls Rs
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 31.250 FPS (1536 SPF)
+Compression mode                         : Lossy
+Stream size                              : 471 MiB (3%)
+Title                                    : DD / 5.1 / 48 kHz / 640 kbps
+Language                                 : Chinese
+Service kind                             : Complete Main
+Default                                  : Yes
+Forced                                   : No
+
+Audio #2
+ID                                       : 3
+Format                                   : AAC LC
+Format/Info                              : Advanced Audio Codec Low Complexity
+Codec ID                                 : A_AAC-2
+Duration                                 : 1 h 42 min
+Bit rate                                 : 84.1 kb/s
+Channel(s)                               : 2 channels
+Channel layout                           : L R
+Sampling rate                            : 48.0 kHz
+Frame rate                               : 46.875 FPS (1024 SPF)
+Compression mode                         : Lossy
+Stream size                              : 61.8 MiB (0%)
+Title                                    : Commentary by noted Asian cinema critic Tony Rayns / AAC / 2.0 / 48 kHz / 84 kbps
+Language                                 : English
+Default                                  : No
+Forced                                   : No
+
+Text #1
+ID                                       : 4
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 1 h 39 min
+Bit rate                                 : 31 b/s
+Count of elements                        : 799
+Stream size                              : 23.2 KiB (0%)
+Language                                 : English
+Default                                  : Yes
+Forced                                   : No
+
+Text #2
+ID                                       : 5
+Format                                   : UTF-8
+Codec ID                                 : S_TEXT/UTF8
+Codec ID/Info                            : UTF-8 Plain Text
+Duration                                 : 1 h 39 min
+Bit rate                                 : 35 b/s
+Count of elements                        : 861
+Stream size                              : 25.8 KiB (0%)
+Title                                    : Simplified
+Language                                 : Chinese
+Default                                  : No
+Forced                                   : No
+
+Menu
+00:00:00.000                             : en:0.01 Centimeters
+00:05:49.808                             : en:Deadlines
+00:17:06.567                             : en:Expiration
+00:22:02.863                             : en:Thirty Cans
+00:26:06.982                             : en:The First Woman
+00:32:42.627                             : en:Room Service
+00:36:26.017                             : en:Freedom
+00:40:49.238                             : en:Another Man
+00:44:57.111                             : en:Flights
+00:53:38.298                             : en:Solitude
+00:58:42.102                             : en:Helping Hands
+01:01:48.163                             : en:Dreamer
+01:10:20.091                             : en:Home Improvement
+01:20:18.731                             : en:Noticing Things
+01:24:34.945                             : en:Caught
+01:28:27.219                             : en:California
+01:36:19.565                             : en:New Destination
